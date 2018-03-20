@@ -29,6 +29,7 @@ class ArticleController extends AbstractController
             'Woohoo! I\'m going on an all-asteroid diet!',
             'I like bacon too! Buy some from my site! bakinsomebacon.com',
         ];
+        dump($comments);
         return $this->render('article/show.html.twig',['comments' => $comments]);
     }
 }
